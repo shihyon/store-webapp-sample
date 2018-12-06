@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: webpod-test
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: webpod-test-pod
+    spec:
+      containers:
+      - name: webpod
+        image: 192.168.251.222:8123/repository/sparkdockerrepo/webpod:1
+        ports:
+        - containerPort: 8080
