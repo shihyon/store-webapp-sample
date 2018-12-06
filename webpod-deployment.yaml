@@ -11,6 +11,6 @@ spec:
     spec:
       containers:
       - name: webpod
-        image: 192.168.251.222:8123/repository/sparkdockerrepo/webpod:1
+        image: 192.168.251.222:8123/webpod:1
         ports:
         - containerPort: 8080
