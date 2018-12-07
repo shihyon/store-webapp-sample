@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: simple-http
-        image: 192.168.251.222:8123/repository/sparkdockerrepo/webpod:9
+        image: 192.168.251.222:8123/repository/sparkdockerrepo/webpod:VERSION
         ports:
         - name: http
           containerPort: 8080
