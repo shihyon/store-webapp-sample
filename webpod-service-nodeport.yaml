@@ -1,11 +1,11 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: service-webpod
+  name: service-test
 spec:
   type: NodePort
   selector:
-    app: webpod-test-pod
+    app: service_test_pod
   ports:
   - port: 80
     targetPort: http
